@@ -14,7 +14,3 @@ window_name = 'image'
 cv.imshow(window_name,dst)
 cv.waitKey(0)
 
-
-#blur
-
-
