@@ -5,7 +5,7 @@ import imageio
 import matplotlib.pyplot as plt
 
 blurryPath = 'datasets/Blurry/'
-im = imageio.imread(blurryPath + 'blurry_002.jpg')/255
+im = imageio.imread(blurryPath + 'blurry_150.jpg')/255
 im_blurred = ndimage.gaussian_filter(im, (5,5,0))
 im_detail = numpy.clip(im - im_blurred, 0, 1)
 
